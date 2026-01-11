@@ -1,0 +1,125 @@
+/* Общие стили для контейнера */
+.container {
+text-align: center;
+padding: 20px;
+}
+
+/* Стили для хедера */
+.header img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+/* Слайдер */
+.slide {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px;
+}
+
+/* Стили для изображения продуктов */
+.productImage {
+width: 400px;
+height: 400px;
+object-fit: cover;
+border-radius: 10px;
+}
+
+/* Стиль для секции "О нас" */
+.aboutUs {
+background-color: #f3f3f3;
+padding: 20px;
+margin: 50px 0 0 0;
+border-radius: 10px;
+text-align: center;
+}
+
+.aboutUs h2 {
+color: #222;
+margin-bottom: 10px;
+}
+
+.aboutUs p {
+font-size: 1rem;
+color: #555;
+line-height: 1.5;
+}
+
+/* Медиазапросы для адаптивности */
+
+/* Мобильные устройства (ширина экрана меньше 768px) */
+@media (max-width: 768px) {
+.productImage {
+    width: 100%;
+    height: 150px;
+    max-width: 300px; /* Ограничим ширину изображения */
+}
+
+.aboutUs p {
+    font-size: 0.9rem;
+}
+
+.slide {
+    padding: 10px; /* Уменьшаем отступы для мобильных устройств */
+}
+
+h1 {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.header img {
+    max-height: 200px; /* Снижаем высоту изображения для мобильных */
+}
+
+/* Уменьшаем количество слайдов на экране для мобильных */
+.slick-slide {
+    width: 100% !important; /* Убираем фиксированную ширину слайдов */
+}
+}
+
+/* Планшеты (ширина экрана от 768px до 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+.productImage {
+    width: 80%; /* Изменяем ширину изображений */
+    height: 300px;
+}
+
+.aboutUs p {
+    font-size: 1rem;
+}
+
+.slide {
+    padding: 15px;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+.header img {
+    max-height: 250px;
+}
+
+.slick-slide {
+    width: 90% !important; /* Уменьшаем размер слайдов для планшетов */
+}
+}
+
+/* Десктоп (ширина экрана больше 1024px) */
+@media (min-width: 1025px) {
+.productImage {
+    width: 400px;
+    height: 400px;
+}
+
+.aboutUs p {
+    font-size: 1rem;
+}
+
+.header img {
+    height: auto;
+}
+}

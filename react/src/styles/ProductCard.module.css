@@ -1,0 +1,63 @@
+.productCard__card {
+  height: 630px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.productCard__image {
+  width: 400px; /* Устанавливаем одинаковую ширину */
+  height: 400px; /* Устанавливаем одинаковую высоту */
+  object-fit: cover;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.productCard__card h2 {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.productCard__card p {
+  font-size: 16px;
+  color: #555;
+}
+
+.productCard__card a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+
+/* Стили для кнопки */
+.productCard__button {
+  background-color: #777b78c5; /* Зеленый фон */
+  color: #fff; /* Белый цвет текста */
+  border: none; /* Без рамки */
+  padding: 10px 10px; /* Отступы внутри кнопки */
+  font-size: 16px; /* Размер текста */
+  font-weight: bold; /* Жирный текст */
+  border-radius: 5px; /* Закругленные углы */
+  cursor: pointer; /* Указатель курсора */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Плавный переход */
+  width: 90%; /* Занимает всю ширину контейнера */
+  margin-bottom: 15px;
+}
+
+.productCard__card button:hover {
+  background-color: #1c7930; /* Темнее зеленый при наведении */
+  transform: translateY(-2px); /* Легкое поднятие кнопки */
+}
+
+.productCard__card button:active {
+  background-color: #1e7e34; /* Еще темнее зеленый при нажатии */
+  transform: translateY(0); /* Нормальное положение при нажатии */
+}
+
+.productCard__card button:disabled {
+  background-color: #ccc; /* Серый фон для отключенной кнопки */
+  cursor: not-allowed; /* Указатель "запрещено" */
+}

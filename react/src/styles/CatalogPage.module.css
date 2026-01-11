@@ -1,0 +1,65 @@
+/* CatalogPage.module.css */
+
+.container {
+padding: 20px;
+}
+
+h1 {
+text-align: center;
+font-size: 2rem;
+margin-bottom: 20px;
+}
+
+.grid {
+display: flex;
+flex-wrap: wrap;
+gap: 20px; /* Отступ между товарами */
+justify-content: space-between;
+}
+
+.grid > div {
+flex: 1 1 calc(33.333% - 20px); /* 3 товара в строке с отступом */
+box-sizing: border-box;
+}
+
+.productCard {
+background-color: #fff;
+border: 1px solid #ddd;
+border-radius: 8px;
+overflow: hidden;
+text-align: center;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.productCard img {
+width: 100%;
+height: auto;
+object-fit: cover;
+border-bottom: 1px solid #ddd;
+}
+
+.productCard .details {
+padding: 10px;
+}
+
+.productCard .name {
+font-size: 1.2rem;
+font-weight: bold;
+}
+
+.productCard .price {
+font-size: 1.1rem;
+color: #28a745;
+margin-top: 5px;
+}
+
+.filters {
+margin-bottom: 20px;
+display: flex;
+justify-content: space-between;
+}
+
+.filters select {
+padding: 5px;
+margin-left: 10px;
+}
